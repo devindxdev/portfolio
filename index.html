@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devind Dev</title>
+
+  <!--FAVICON-->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+
+  <!--CSS Links-->
+  <link href="./assets/css/reset.css" rel="stylesheet" />
+  <link href="./assets/css/variables.css" rel="stylesheet" />
+  <link href="./assets/css/commonStyles.css" rel="stylesheet" />
+  <link href="./assets/css/profileStyles.css" rel="stylesheet" />
+  <link href="./assets/css/navigation.css" rel="stylesheet" />
+  <link href="./assets/css/pagesStyles.css" rel="stylesheet" />
+  <link href="./assets/css/responsiveStyles.css" rel="stylesheet" />
+
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!--Javascript Link-->
+  <script src="./assets/js/script.js" defer></script>
+  <!--ionicon link-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+  
+  <!--Main-->
+  <main>
+
+      <!--profileBar-->
+      <aside class="profileBar" profileBarData>
+        <div class="profileBarInfo">
+          
+          <figure class="profileAvatr">
+            <img src="./assets/images/face-2.png" alt="Devind Dev" width="80">
+          </figure>
+          
+          <div class="profileContent">
+            <h1 class="name" title="Devind Dev">Devind Dev</h1>
+            <p class="title">NodeJS Developer</p>
+          </div>
+
+          <button class="moreInfoButton" profileBarButton>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="profileBarMoreInfo">
+
+          <div class="separator"></div>
+
+          <ul class="contactsList">
+            <li class="contactItem">
+              <div class="iconBox">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contactInfo">
+                <p class="contactTitle">Email</p>
+                <a href="mailto:devdevind@gmail.com" class="contactLink">devdevind@gmail.com</a>
+              </div>
+            </li>
+  
+            <li class="contactItem">
+              <div class="iconBox">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contactInfo">
+                <p class="contactTitle">Phone</p>
+                <a href="tel:+2363133324" class="contactLink">+1 (236) 313-3324</a>
+              </div>
+            </li>
+  
+            <li class="contactItem">
+              <div class="iconBox">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="contactInfo">
+                <p class="contactTitle">Birthday</p>
+                <time datetime="2002-06-22">June 22, 2002</time>
+              </div>
+            </li>
+  
+            <li class="contactItem">
+              <div class="iconBox">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contactInfo">
+                <p class="contactTitle">Location</p>
+                <address>Kamloops, British Columbia, Canada</address>
+              </div>
+            </li>
+
+          </ul>
+  
+          <div class="separator"></div>
+  
+          <ul class="socialList">
+  
+            <li class="socialItem">
+              <a href="#" class="socialLink">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li class="socialItem">
+              <a href="#" class="socialLink">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li class="socialItem">
+              <a href="#" class="socialLink">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            
+          </ul>
+  
+        </div>
+
+      </aside>
+
+
+      <!--Main-->
+      <div class="mainContent">
+
+          <!--Navigation Bar-->
+          <nav class="navBar">
+            <ul class="navList">
+              <li class="navItem">
+                <button class="navLink  active" navLinkData>About</button>
+              </li>
+              <li class="navItem">
+                <button class="navLink" navLinkData>Education</button>
+              </li> 
+              <li class="navItem">
+                <button class="navLink" navLinkData>Experience</button>
+              </li>
+              <li class="navItem">
+                <button class="navLink" navLinkData>Projects</button>
+              </li>
+              <li class="navItem">
+                <button class="navLink" navLinkData>Contact</button>
+              </li>
+            </ul>
+          </nav>
+          
+      </div>
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a highly skilled and passionate professional with expertise in building robust, scalable web applications using the Node.js runtime environment. 
+            With a strong background in JavaScript and its various libraries and frameworks, 
+            I possess extensive experience in developing server-side applications, APIs, and web services.
+          </p>
+
+          <p>
+            My technical skill set includes a deep understanding of core Node.js concepts such as event-driven programming, asynchronous programming, and callback functions. 
+            I am well-versed in using Node.js to build real-time applications, microservices, and complex data-driven systems.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+/* Reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  button {
+    border: none;
+    cursor: pointer;
+    background: none;
+    font: inherit;
+    text-align: left;
+  }
+  
+  input, textarea {
+    font: inherit;
+    display: block;
+    background: none;
+    width: 100%;
+  }
+  
+  ::selection {
+    color: var(--smoky-black);
+    background: var(--torea-bay);
+  }
+
+  a { text-decoration: none; }
+  
+  li { list-style: none; }
+  
+  img, ion-icon, a, button, time, span { display: block; }
+  
+  :focus { outline-color: var(--torea-bay); }
+  
+  html { font-family: var(--ff-poppins); }
+  
+  body { background: var(--smoky-black); }
