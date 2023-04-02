@@ -23,7 +23,7 @@
   
   ::selection {
     color: var(--smoky-black);
-    background: var(--torea-bay);
+    background: var(--orange-yellow-crayola);
   }
 
   a { text-decoration: none; }
@@ -32,7 +32,7 @@
   
   img, ion-icon, a, button, time, span { display: block; }
   
-  :focus { outline-color: var(--torea-bay); }
+  :focus { outline-color: var(--orange-yellow-crayola); }
   
   html { font-family: var(--ff-poppins); }
   

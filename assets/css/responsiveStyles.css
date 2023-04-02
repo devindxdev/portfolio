@@ -1,0 +1,372 @@
+@media (min-width: 580px) {
+
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+  
+      /**
+       * typography
+       */
+  
+      --fs-1: 32px;
+      --fs-2: 24px;
+      --fs-3: 26px;
+      --fs-4: 18px;
+      --fs-6: 15px;
+      --fs-7: 15px;
+      --fs-8: 12px;
+  
+    }
+  
+  
+  
+    /**
+     * #REUSED STYLE
+     */
+  
+    .profileBar, article {
+      width: 520px;
+      margin-inline: auto;
+      padding: 30px;
+    }
+  
+    .articleTitle {
+      font-weight: var(--fw-600);
+      padding-bottom: 15px;
+    }
+  
+    .articleTitle::after {
+      width: 40px;
+      height: 5px;
+    }
+  
+    .iconBox {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      font-size: 18px;
+    }
+  
+  
+  
+    /**
+     * #MAIN
+     */
+  
+    main {
+      margin-top: 60px;
+      margin-bottom: 100px;
+    }
+  
+  
+  
+    /**
+     * #SIDEBAR
+     */
+  
+    .profileBar {
+      max-height: 180px;
+      margin-bottom: 30px;
+    }
+  
+    .profileBar.active { max-height: 584px; }
+  
+    .profileBarInfo { gap: 25px; }
+  
+    .profileAvatar { border-radius: 30px; }
+  
+    .profileAvatar img { width: 120px; }
+  
+    .profileContent .name { margin-bottom: 15px; }
+  
+    .profileContent .title { padding: 5px 18px; }
+  
+    .moreInfoButton {
+      top: -30px;
+      right: -30px;
+      padding: 10px 15px;
+    }
+  
+    .moreInfoButton span {
+      display: block;
+      font-size: var(--fs-8);
+    }
+  
+    .moreInfoButton ion-icon { display: none; }
+  
+    .separator { margin: 32px 0; }
+  
+    .contactsList { gap: 20px; }
+  
+    .contactInfo {
+      max-width: calc(100% - 64px);
+      width: calc(100% - 64px);
+    }
+  
+  
+  
+    /**
+     * #NAVBAR
+     */
+  
+    .navBar { border-radius: 20px 20px 0 0; }
+  
+    .navList { gap: 20px; }
+  
+    .navLink { --fs-8: 14px; }
+  
+  
+  
+    /**
+     * #ABOUT
+     */
+  
+    .about .articleTitle { margin-bottom: 20px; }
+  
+    .articleText { margin-bottom: 40px; }
+  
+    /* service */
+  
+    .serviceItem {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 18px;
+      padding: 30px;
+    }
+  
+    .serviceIcon {
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  
+    .serviceContent { text-align: center; }
+  
+    /**
+     * #RESUME
+     */
+  
+    .timelineList { margin-left: 65px; }
+  
+    .timelineItem:not(:last-child)::before { left: -40px; }
+  
+    .timelineItem::after {
+      height: 8px;
+      width: 8px;
+      left: -43px;
+    }  
+  
+  
+    /* CONTACT */
+  
+    .inputWrap {
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+  
+    .formInput { padding: 15px 20px; }
+  
+    textarea.formInput { margin-bottom: 30px; }
+  
+    .formButton {
+      --fs-6: 16px;
+      padding: 16px 20px;
+    }
+  
+    .formButton ion-icon { font-size: 18px; }
+  
+  }
+  
+  
+
+
+@media (min-width: 1024px) {
+
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+  
+      /**
+      * shadow
+      */
+  
+      --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
+      --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
+      --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
+  
+    }
+  
+  
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .profileBar, article {
+      width: 950px;
+      box-shadow: var(--shadow-5);
+    }
+  
+  
+  
+    /**
+     * MAIN 
+     */
+  
+    main { margin-bottom: 60px; }
+  
+    .mainContent {
+      position: relative;
+      width: max-content;
+      margin: auto;
+    }
+  
+  
+  
+    /**
+     * NAVBAR
+     */
+  
+    .navBar {
+      position: absolute;
+      bottom: auto;
+      top: 0;
+      left: auto;
+      right: 0;
+      width: max-content;
+      border-radius: 0 20px;
+      padding: 0 20px;
+      box-shadow: none;
+    }
+  
+    .navList {
+      gap: 30px;
+      padding: 0 20px;
+    }
+  
+    .navLink { 
+        font-weight: var(--fw-500); 
+        font-size: var(--fs-7);
+    }
+  
+    /**
+     * ABOUT
+     */
+  
+    /* service */
+  
+    .serviceList {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 25px;
+    }
+
+}
+  
+  
+
+
+@media (min-width: 1250px) {
+
+    /**
+     * RESET
+     */
+  
+    
+  
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .sidebar, article { width: auto; }
+  
+    article { min-height: 100%; }
+  
+  
+  
+    /**
+     * MAIN
+     */
+  
+    main {
+      max-width: 1200px;
+      margin-inline: auto;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 25px;
+    }
+  
+    .mainContent {
+      min-width: 75%;
+      width: 75%;
+      margin: 0;
+    }
+  
+  
+  
+    /**
+     * SIDEBAR
+     */
+  
+    .profileBar {
+      position: sticky;
+      top: 60px;
+      max-height: max-content;
+      height: 100%;
+      margin-bottom: 0;
+      padding-top: 60px;
+      z-index: 1;
+    }
+  
+    .profileBarInfo { flex-direction: column; }
+  
+    .profileAvatar img { width: 150px; }
+  
+    .info-content .name {
+      white-space: nowrap;
+      text-align: center;
+    }
+  
+    .profileContent .title { margin: auto; }
+  
+    .moreInfoButton { display: none; }
+  
+    .profileBarMoreInfo {
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .contactsList { grid-template-columns: 1fr; }
+  
+    .contactInfo :is(.contact-link) {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  
+    .contactInfo :is(.contact-link, time, address) {
+      --fs-7: 14px;
+      font-weight: var(--fw-300);
+    }
+  
+    .separator:last-of-type {
+      margin: 15px 0;
+      opacity: 0;
+    }
+  
+    .socialList { justify-content: center; }
+  
+  
+  
+    /**
+       * RESUME
+       */
+  
+    .timelineText { max-width: 700px; }
+  
+}

@@ -23,7 +23,7 @@
 
 .navLink {
     color: var(--light-gray);
-    font-size: var(--fs-10);
+    font-size: var(--fs-8);
     padding: 20px 7px;
     transition: color var(--transition-1);
 }
@@ -32,6 +32,6 @@
 .navLink:focus { color: var(--light-gray-70); }
 
 .navLink.active { 
-    color: var(--torea-bay); 
+    color: var(--orange-yellow-crayola); 
 }
   
