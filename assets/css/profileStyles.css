@@ -8,10 +8,10 @@ main {
 
 /* Re-used Styling */ 
 .profileBar {
-    background: var(--eerie-black-2);
-    border: 1px solid var(--jet);
+    background: #1e1e1f;
+    border: 1px solid #383838;
     border-radius: 20px;
-    box-shadow: var(--shadow-1);
+    box-shadow: -4px 8px 24px #00000040;
     padding: 15px;
     z-index: 1;
 }
@@ -19,13 +19,17 @@ main {
 .separator {
     width: 100%;
     height: 1px;
-    background: var(--jet);
+    background: #383838;
     margin: 16px 0;
 }
 
 .iconBox {
     position: relative;
-    background: var(--border-gradient-onyx);
+    background: linear-gradient(
+        to bottom right, 
+        #404040 0%, 
+        #40404000 50%
+      );
     width: 30px;
     height: 30px;
     border-radius: 8px;
@@ -33,8 +37,8 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    color: var(--orange-yellow-crayola);
-    box-shadow: var(--shadow-1);
+    color: #ffdb70;
+    box-shadow: -4px 8px 24px #00000040;
     z-index: 1;
   }
   
@@ -42,7 +46,7 @@ main {
     content: "";
     position: absolute;
     inset: 1px;
-    background: var(--eerie-black-1);
+    background: #202022;
     border-radius: inherit;
     z-index: -1;
   }
@@ -53,7 +57,7 @@ main {
 /* Profile Bar Styling */
 .profileBar {
     overflow: hidden;
-    transition: var(--transition-2);
+    transition: 0.5s ease-in-out;
     margin-bottom: 15px;
     max-height: 112px;
 }
@@ -69,23 +73,27 @@ main {
 }
 
 .profileAvatar {
-    background: var(--bg-gradient-onyx);
+    background: linear-gradient(
+        to bottom right, 
+        #3f3f40 3%, 
+        #303030 97%
+    );
     border-radius: 20px;
 }
 
 .profileContent .name{
     margin-bottom: 10px;
-    font-size: var(--fs-3);
-    font-weight: var(--fw-500);
+    font-size: var(--fontSize-3);
+    font-weight: 500;
     letter-spacing: -0.25px;
-    color: var(--white-2);
+    color: #fafafa;
 }
 
 .profileContent .title {
-    color: var(--white-1);
+    color: #ffffff;
     background: var(--onyx);
-    font-size: var(--fs-8);
-    font-weight: var(--fw-300);
+    font-size: var(--fontSize-8);
+    font-weight: 300;
     width: max-content;
     padding: 3px 12px;
     border-radius: 8px;
@@ -97,11 +105,15 @@ main {
     right: -15px;
     border-radius: 0 15px;
     font-size: 13px;
-    color: var(--orange-yellow-crayola);
-    background: var(--border-gradient-onyx);
+    color: #ffdb70;
+    background: linear-gradient(
+        to bottom right, 
+        #404040 0%, 
+        #40404000 50%
+    );
     padding: 10px;
-    box-shadow: var(--shadow-2);
-    transition: var(--transition-1);
+    box-shadow: 0 16px 30px #00000040;
+    transition: 0.25s ease;
     z-index: 1;
 }
 
@@ -110,19 +122,34 @@ main {
     position: absolute;
     inset: 1px;
     border-radius: inherit;
-    background: var(--bg-gradient-jet);
-    transition: var(--transition-1);
+    background: linear-gradient(
+        to bottom right, 
+        #2d2d2e40 0%, 
+        #1b1b1d00 100%
+      ), #202022;
+    transition: 0.25s ease;
     z-index: -1;
 }
 
-.moreInfoButton:hover, .moreInfoButton:focus { background: var(--bg-gradient-yellow-1); }
-.moreInfoButton:hover::before, .moreInfoButton:focus::before { background: var(--bg-gradient-yellow-2); }
+.moreInfoButton:hover, .moreInfoButton:focus { background: linear-gradient(
+    to bottom right, 
+    #ffda6b 0%, 
+    #ffc06100 50%
+  );
+}
+
+.moreInfoButton:hover::before, .moreInfoButton:focus::before { background: linear-gradient(
+    135deg, 
+    #ffda6b40 0%, 
+    #ffbb5c00 59.86%
+  ), #202022;
+}
 .moreInfoButton span { display: none; }
 
 .profileBarMoreInfo {
     opacity: 0;
     visibility: hidden;
-    transition: var(--transition-2);
+    transition: 0.5s ease-in-out;
 }
 
 .profileBar.active .profileBarMoreInfo {
@@ -149,15 +176,15 @@ main {
 }
   
 .contactTitle {
-    color: var(--light-gray-70);
-    font-size: var(--fs-8);
+    color: #d6d6d6b3;
+    font-size: var(--fontSize-8);
     text-transform: uppercase;
     margin-bottom: 2px;
 }
   
 .contactInfo :is(.contactLink, time, address) {
-    color: var(--white-2);
-    font-size: var(--fs-7);
+    color: #fafafa;
+    font-size: var(--fontSize-7);
 }
   
 .contactInfo address { font-style: normal; }
@@ -172,9 +199,9 @@ main {
 }
   
 .socialItem .socialLink {
-    color: var(--light-gray-70);
+    color: #d6d6d6b3;
     font-size: 18px;
 }
   
   
-.socialItem .socialLink:hover { color: var(--light-gray); }
+.socialItem .socialLink:hover { color: #d6d6d6; }

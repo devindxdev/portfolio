@@ -22,8 +22,8 @@
   }
   
   ::selection {
-    color: var(--smoky-black);
-    background: var(--orange-yellow-crayola);
+    color: #121212;
+    background: #ffdb70;
   }
 
   a { text-decoration: none; }
@@ -32,8 +32,8 @@
   
   img, ion-icon, a, button, time, span { display: block; }
   
-  :focus { outline-color: var(--orange-yellow-crayola); }
+  :focus { outline-color: #ffdb70; }
   
-  html { font-family: var(--ff-poppins); }
+  html { font-family: 'Poppins', sans-serif; }
   
-  body { background: var(--smoky-black); }
+  body { background: #121212; }

@@ -5,11 +5,11 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background: hsla(240, 1%, 17%, 0.75);
+    background: #2b2b2cbf;
     backdrop-filter: blur(10px);
-    border: 1px solid var(--jet);
+    border: 1px solid #383838;
     border-radius: 12px 12px 0 0;
-    box-shadow: var(--shadow-2);
+    box-shadow: 0 16px 30px #00000040;
     z-index: 5;
 }
   
@@ -22,16 +22,16 @@
 }
 
 .navLink {
-    color: var(--light-gray);
-    font-size: var(--fs-8);
+    color: #d6d6d6;
+    font-size: var(--fontSize-8);
     padding: 20px 7px;
-    transition: color var(--transition-1);
+    transition: color 0.25s ease;
 }
 
 .navLink:hover,
-.navLink:focus { color: var(--light-gray-70); }
+.navLink:focus { color: #d6d6d6b3; }
 
 .navLink.active { 
-    color: var(--orange-yellow-crayola); 
+    color: #ffdb70; 
 }
   
