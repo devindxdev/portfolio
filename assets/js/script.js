@@ -12,7 +12,7 @@ profileBarButton.addEventListener("click", function () { elementToggleFunc(profi
 //Navigation
 const navigationLinks = document.querySelectorAll("[navLinkData]");
 const pages = document.querySelectorAll("[data-page]");
-// add event to all nav link
+
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
     for (let i = 0; i < pages.length; i++) {
